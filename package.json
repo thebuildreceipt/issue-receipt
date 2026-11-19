@@ -1,0 +1,20 @@
+{
+  "name": "issue-receipt",
+  "version": "1.0.0",
+  "description": "A GitHub Action that triages every new issue with Claude: labels, priority, a short summary and a reply asking for missing info. Prints what each run cost.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "demo": "npm run build && node dist/src/main.js --dry-run examples/issue-event.json"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.10.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

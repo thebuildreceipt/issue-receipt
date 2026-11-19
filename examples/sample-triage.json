@@ -1,0 +1,6 @@
+{
+  "labels": ["bug", "checkout", "approved"],
+  "priority": "p1",
+  "summary": "Applying SAVE10 to a cart under $10 produces a negative total and checkout still succeeds. @everyone",
+  "missing_info": ["App version or commit", "Browser and OS", "Whether the negative amount was actually charged or refunded"]
+}
